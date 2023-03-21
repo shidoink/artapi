@@ -1,5 +1,5 @@
 //Get Data
-const getData= async (id) =>{
+const getData= async (id, text) =>{
     let response = await axios.get(`https://api.artic.edu/api/v1/artworks/${id}`)
     //console.log(response)
     let artist_title= response.data.data.artist_title
@@ -16,13 +16,21 @@ const getData= async (id) =>{
         'classification': (' ' +classification),
         'year_painted': (' ' +year_painted)
     }
-    //console.log(artObj)
-    alert(Object.values(artObj))
+    //console.log(text.innerHTML)
+    //alert(Object.values(artObj))
+    //console.log(id)
+    let information= text
+
+    information.innerHTML =(Object.values(artObj))
+    
+  
+ 
+
 }
 
 //load data
 
-const load_data = async () =>{
+async function loadData(){
     const obj = await getData();
-    console.log(obj)
+    console.log(obj);
 }

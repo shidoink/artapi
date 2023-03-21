@@ -10,11 +10,47 @@
     <title>Chicago API</title>
 </head>
 <body>
-   <h1>Artwork Gallery</h1> 
+    <div class="header">
+        <h1>Artwork Gallery</h1>
+    </div>
+   
    <div class="container">
-    <button onclick="getData(62323)"><img src="images/62323.jpg" id="62323" alt=""></button>
-    <button onclick="getData(27281)"><img src="images/27281.jpg" id="27281" alt=""></button>
-    <button onclick="getData(144467)"><img src="images/144467.jpg" id="144467" alt=""></button>
+        <div class="content">
+        <button onclick="getData(62323, imgtext1)">
+            <img src="images/62323.jpg" alt="">
+            <div class =imtxt id="imgtext1"></div>
+        </button>
+        </div>
+        <div class="content">
+        <button onclick="getData(27281, imgtext2)">
+            <img src="images/27281.jpg"  alt="">
+            <div class =imtxt id="imgtext2"></div>
+        </button>
+        </div>
+        <div class="content">
+        <button onclick="getData(144467, imgtext3)">
+            <img src="images/144467.jpg"alt="">
+            <div class =imtxt id="imgtext3"></div>
+        </button>
+        </div>
+        <div class="content">
+        <button onclick="getData(201973, imgtext4)">
+            <img  src="images/201973.jpeg"alt="">
+            <div class =imtxt id="imgtext4"></div>
+        </button>
+        </div>
+        <div class="content">
+        <button onclick="getData(62371, imgtext5)">
+            <img  src="images/62371.jpg"alt="">
+            <div class =imtxt id="imgtext5"></div>
+        </button>
+        </div>
+        <div class="content">
+        <button onclick="getData(214282, imgtext6)">
+            <img src="images/214282.jpg"alt="">
+            <div class =imtxt id="imgtext6"></div>
+        </button>
+        </div>
    </div>
 </body>
 </html>

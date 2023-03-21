@@ -1,0 +1,38 @@
+body{
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.header{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img {
+    max-width: 500px;
+    border-radius: 8px;
+  }
+
+  .content{
+    margin: 10px;
+    position:relative;
+    text-align:center;
+    font-size: 40px;
+    color: white;
+  }
+
+.imtxt{
+    position:absolute;
+    font-size: 15px;
+    top: 90%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    font-family: 'Courier New', Courier, monospace;
+}
